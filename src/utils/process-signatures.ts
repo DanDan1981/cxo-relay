@@ -62,8 +62,8 @@ export async function processSignatures({
     } catch {
       writeLog.info('Failed to fetch gas price information!');
       callOptions = {
-        maxFeePerGas: parseUnits('50', 'gwei'),
-        maxPriorityFeePerGas: parseUnits('50', 'gwei'),
+        maxFeePerGas: parseUnits('200', 'gwei'),
+        maxPriorityFeePerGas: parseUnits('200', 'gwei'),
       };
     }
   }
